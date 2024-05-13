@@ -220,7 +220,11 @@ nav{
 footer{
     text-align: center;
 }
-main{
-    margin-left: 12rem;
-    margin-right: 12rem;
+
+@media (min-width:768px) {
+    main{
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+    
 }
