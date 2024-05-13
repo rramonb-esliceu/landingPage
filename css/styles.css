@@ -221,7 +221,7 @@ footer{
     text-align: center;
 }
 
-@media (min-width:768px) {
+@media (min-width:1000px) {
     main{
         margin-left: 12rem;
         margin-right: 12rem;
