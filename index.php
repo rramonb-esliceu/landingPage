@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto Web</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1 class="titulo">SENSEI GYM <span>Muay Thai</span></h1>
-    </header>
-    <div class="bg-secundario">
-        <nav class="navegacion-principal">
-            <a href="index.html">Inicio</a>
-            <a href="instalaciones.html">Instalaciones</a>
-            <a href="entrenamientos.html">Entrenamientos</a>
-            <a href="Contacto.html">Contacto</a>
-        </nav>
-    </div>
+<?php
+    include 'db.php';
+    include 'header.php';
+?>
     <section class="hero">
         <div class="contenido-hero">
             <h2>SENSEI GYM MUAY THAI</h2>
@@ -82,47 +62,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </section>
         </div>
-        <section>
-            <h2>Contacto</h2>
-            <form class="formulario" action="">
-                <fieldset>
-                    <legend>Contáctame enviando tus datos</legend>
-                    <div class="contenedor-campos">
-                        <div class="campo">
-                            <div>
-                                <label for="">Nombre:</label>
-                                <input class="input-text" type="text" name="nombre" placeholder="Tu Nombre" id="">
-                            </div>
-                        </div>
-                        <div class="campo">
-                            <div>
-                                <label for="">Teléfono</label>
-                                <input class="input-text" type="tel" name="telefono" id="" placeholder="Tú Teléfono">
-                            </div>
-                        </div>
-                        <div class="campo">
-                            <div>
-                                <label for="">Correo</label>
-                                <input class="input-text" type="email" name="correo" id="" placeholder="Tu Correo">
-                            </div>
-                        </div>
-                        <div class="campo">
-                            <div>
-                                <label for="">Mensaje</label>
-                                <textarea class="input-text" name="mensaje" id="" cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-                        <div>
-                            <input class="boton" type="submit" value="Enviar">
-                        </div>
-                    </div>
-                </fieldset>
-                
-            </form>
-        </section>
+
     </main>
-    <footer>
-        <p>Todos los derechos reservados</p>
-    </footer>
-</body>
-</html>
+<?php
+    include 'footer.php';
+?>
