@@ -5,7 +5,7 @@
         $msg=$_GET['msg'];
         ?>
 
-        <div class="contenido <?php echo $status; ?>">
+        <div class="contenido <?php echo $status; ?> mensaje">
             <p><?php echo $msg ?></p>
         </div>
 
